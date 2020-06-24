@@ -155,6 +155,13 @@ textarea {
     width: 100%;
    }
 
+   header .nav-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
    header figure {
     width: 30%;
     display: flex;
@@ -200,6 +207,7 @@ textarea {
    footer .contact {
       font-size: .875em;
       text-align: center;
+      font-style: italic;
    }
 
    footer figure {
@@ -230,12 +238,14 @@ textarea {
       font-family: 'Josefin Slab', serif;
       font-size: 3em;
       text-align: center;
+      width: 100%;
     }
 
     .hero-area h2 {
       font-size: 1.5em;
       text-transform: uppercase;
       text-align: center;
+      max-width: 90%;
     }
 
     .hero-area .image-wrapper {
@@ -389,26 +399,214 @@ textarea {
   /* General styles */
 
   /* Header */
+  header {
+    padding: 40px 0 60px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right 35% bottom 45%;
+  }
+
+  header .content-wrapper {
+    max-width: 90%;
+    margin: auto;
+    
+  }
+
+  header .nav-area {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  header figure {
+    width: 20%;
+  }
+
+  header nav ul {
+    justify-content: flex-end;
+  }
+
+  header li {
+    padding-left: 50px;
+  }
 
   /* Hero Area */
 
+  header .hero-area {
+    padding-top: 40px;
+  }
+
+  header .hero-area h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  header .hero-area h2 {
+    font-size: 1.6em;
+  }
+
+  header .image-wrapper {
+    padding-top: 50px;
+
+  }
+
+  header .image-wrapper img {
+    padding: 0 60px;
+  }
+
+  header .hero-area .image-wrapper p {
+    font-size: 2.5em;
+  }
+
+
   /* Work Samples Area */
+  main .work-samples .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  main .work-samples img {
+    width: 50%;
+    
+  }
 
   /* About Area */
+  main .about-me {
+    padding: 50px 30px;
+  }
+
+
+  main .about-me .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  main .about-me img {
+    width: 40%;
+    padding: 0 20px;
+  
+  }
+
+  main .about-me p {
+    width: 45%;
+    padding: 0 20px;
+    font-size: 1.5em;
+  }
+
+  /* Footer */
+  footer {
+    padding: 10px 30px 20px;
+   }
+
+   footer .contact {
+      font-size: 1.5em;
+   }
+
+    footer img {
+      width: 40%;
+   }
+
+   footer .social-icons img {
+    width: 15%;
+   }
 
 }
 
 @media only screen and (min-width: 1200px) {
 /*Desktop styles here*/
+  .hero-area {
+      min-height: 450px;
+    }
 
   /* Header */
+    header {
+    background-position: ;
+  }
+
+
+   header .content-wrapper {
+     justify-content: center;
+     max-width: 90%;
+    }
+
+    header figure {
+    width: 15%;
+  }
+
+    header ul {
+      font-size: 1.5em;
+    }
+
+    header li {
+      padding-left: 75px;
+    }
 
   /* Hero Area */
+    header .hero-area .content-wrapper {
+      width: 75%;
+    }
+
+    header .hero-area h1 {
+      font-size: 6em;
+      margin-top: 30px;
+    }
+
+    header .hero-area h2 {
+      width: 100%;
+      font-size: 2em;
+    }
+
+    header .image-wrapper {
+      padding-top: 30px;
+    }
+
+    header .image-wrapper img {
+    padding: 0 90px;
+    }
+
+    header .hero-area .image-wrapper p {
+      font-size: 3em;
+    }
 
   /* Work Samples Area */
 
   /* About Area */
+    main .about-me {
+    padding: 80px 50px;
+    }
 
+    main .about-me img {
+      width: 35%;
+    }
+
+    main .about-me p {
+      font-size: 2.2em;
+    }
+
+  /* Footer Area */
+    footer {
+      padding: 10px 50px 20px;
+   }
+
+    footer .contact {
+      font-size: 2em;
+   }
+
+    footer .contact h4 {
+    margin-bottom: 0;
+   }
+
+    footer img {
+      padding-left: 150px;
+   }
+
+    footer .social-icons {
+    justify-content: space-around;
+   }
+
+    footer .social-icons img {
+    width: 10%;
+   }
 }
 
 /* ==========================================================================
