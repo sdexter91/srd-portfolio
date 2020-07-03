@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600;700&family=Josefin+Slab:wght@300;600;700&display=swap" rel="stylesheet">
   <title>Contact - Sam R. Dexter</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,34 +43,36 @@
       </div>
     </div>
 
-    <section class="hero-area">
+    <section class="contact-hero-area">
       <div class="content-wrapper">
-        <h1>Hi, I'm Sam.</h1>
-        <h2>I'm a web designer and developer</h2>
-        <div class="image-wrapper">
-          <img src="../img/design-icon.png" alt="design icon">
-          <p>&</p>
-          <img src="../img/dev-icon.png" alt="developer icon">
-        </div>
+        <h1>Contact</h1>
       </div>
     </section>
 
   </header>
 
-  <main>
+  <main class="contact-area">
     <div class="content-wrapper">
       <h4>
         Have a question? Want to talk development? Feel free to leave a message and I’ll reply as soon as possible!  
       </h4>
 
       <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="First Last"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" id="email" name="email" value="email@gmail.com"><br>
-        <label for="message">Your Message:</label><br>
-        <input type="text" id="message" name="message" value="Let's chat!"><br><br>
-        <input type="submit" value="send">
+        <div class="name-container">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" value="Your name"><br><br>
+        </div>
+        <div class="email-container">
+          <label for="email">Email:</label><br>
+          <input type="text" id="email" name="email" value="Your email"><br><br>
+        </div>
+        <div class="message-container">
+          <label for="message">Your Message:</label><br>
+          <input type="text" id="message" name="message" value="What can I help you with?"><br><br><br><br>
+        </div>
+        <div class="submit-button-container">
+          <input class="submit-button" type="submit" value="send &#8594">
+        </div>
       </form>
 
     </div>

@@ -380,10 +380,105 @@ textarea {
 /* ==========================================================================
    Portfolio Page
    ========================================================================== */
+   .portfolio-hero-area h1 {
+      padding: 100px 0;
+      font-size: 3em;
+      font-family: 'Josefin Slab', serif;
+   }  
+
+   .portfolio-area {
+      background-color: #F8F2F2;
+      color: #8C2A2A;
+      text-align: center;
+   } 
+
+   .portfolio-area .content-wrapper {
+     margin: 0;
+     width: 100%;
+     padding-bottom: 20px;
+   }
+
+   .portfolio-area img {
+     padding-top: 30px;
+   }
+
+   .portfolio-area .portfolio-icons {
+    width: 25%;
+    padding-top: 50px;
+   }
+
+   .portfolio-area h3 {
+    font-size: 2em;
+    font-weight: 300;
+   }
+
+    .portfolio-area h4 {
+      padding: 10px 0;
+   }
 
 /* ==========================================================================
    Contact Page
    ========================================================================== */
+  .contact-hero-area h1 {
+      padding: 100px 0;
+      font-size: 3em;
+      font-family: 'Josefin Slab', serif;
+   }   
+
+    .contact-area {
+      background-color: #F8F2F2;
+   }
+
+    .contact-area .content-wrapper {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+   }
+
+    .contact-area h4 {
+      color: #8C2A2A;
+      margin: 0;
+      padding: 100px 0 60px 0;
+      width: 75%;
+      text-align: center;
+      font-size: 1.3em;
+   }
+
+    .contact-area form {
+      color: #8C2A2A;
+      padding-bottom: 100px;
+      width: 70%;
+   }
+
+    label {
+      font-weight: 600;
+    }
+
+    input {
+      width: 100%;
+      color: grey;
+      border: 0;
+      border-bottom: 1px solid #8C2A2A;
+      font-style: italic;
+      font-weight: 300;
+      background-color: #F8F2F2;
+      height: 40px;
+    }
+
+    .submit-button {
+      border: 2px solid #8C2A2A;
+      text-transform: uppercase;
+      padding-top: 5px;
+      font-style: normal;
+      font-weight: 700;
+      color: #8C2A2A;
+    }
+
+    .submit-button:hover {
+      text-decoration: underline;
+    }
 
 /* ==========================================================================
    Helper classes
@@ -609,6 +704,11 @@ textarea {
       padding-bottom: 60px;
    }
 
+   .about-hero-area h1 {
+    font-size: 4em;
+    font-weight: 600;
+   }
+
    .about .image-container {
       padding-right: 50px;
       display: flex;
@@ -629,11 +729,69 @@ textarea {
 /* ==========================================================================
    Portfolio Page
    ========================================================================== */
+   .portfolio-hero-area h1 {
+    font-size: 4em;
+    font-weight: 600;
+   }
+
+   .portfolio-area .content-wrapper {
+     width: 100%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+   }
+
+   .portfolio-area .development-section {
+     width: 40%;
+   }
+
+   .portfolio-area .design-section {
+     width: 40%;
+   }
+
+   
 
 /* ==========================================================================
    Contact Page
    ========================================================================== */
+  .contact-hero-area h1 {
+    font-size: 4em;
+    font-weight: 600;
+   }
 
+  .contact-area form {
+     width: 65%;
+   }
+
+   .contact-area h4 {
+      width: 70%;
+      font-size: 1.5em;
+   }
+
+   form .name-container, .email-container {
+    width: 45%;
+   }
+
+   form .message-container {
+    width: 100%;
+    padding-top: 20px;
+   }
+
+   form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+   }
+
+    form .submit-button-container {
+      width: 100%;
+      display: flex;
+     justify-content: center;
+   }
+
+   form .submit-button {
+      width: 60%;
+   }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -744,11 +902,25 @@ textarea {
 /* ==========================================================================
    Portfolio Page
    ========================================================================== */
+    .portfolio-hero-area h1 {
+    font-size: 5em;
+   }
 
 /* ==========================================================================
    Contact Page
    ========================================================================== */
+   .contact-hero-area h1 {
+    font-size: 5em;
+   }
 
+   .contact-area h4 {
+      font-size: 2em;
+      padding-bottom: 80px;
+   }
+
+   form {
+    width: 60%;
+   }
 }
 
 /* ==========================================================================
