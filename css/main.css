@@ -122,6 +122,7 @@ textarea {
 
     a:link {
       text-decoration: none;
+      color: #F8F2F2;
     }
 
     a:hover {
@@ -363,10 +364,15 @@ textarea {
       width: 50%;
       padding-top: 5px;
       font-size: .75em;
+      font-weight: 700;
       box-shadow: 5px 5px 10px #8C2A2A;
    }
 
-   button a:visited, a:link {
+   .image-container button a:visited {
+    color: #8C2A2A;
+   }
+
+   .image-container button a:link {
     color: #8C2A2A;
    }
 
@@ -886,7 +892,8 @@ textarea {
    About Page
    ========================================================================== */
    .about-hero-area h1 {
-    font-size: 5em;
+    font-size: 6em;
+    font-weight: 700;
    }
 
    .about .image-container {
@@ -903,14 +910,16 @@ textarea {
    Portfolio Page
    ========================================================================== */
     .portfolio-hero-area h1 {
-    font-size: 5em;
+    font-size: 6em;
+    font-weight: 700;
    }
 
 /* ==========================================================================
    Contact Page
    ========================================================================== */
    .contact-hero-area h1 {
-    font-size: 5em;
+    font-size: 6em;
+    font-weight: 700;
    }
 
    .contact-area h4 {
