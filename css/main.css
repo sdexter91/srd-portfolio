@@ -651,6 +651,7 @@ textarea {
   main .work-samples .content-wrapper{
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-start;
   }
 
   main .work-samples img {
