@@ -7,7 +7,8 @@ $formcontent="From: $name \n Message: $message";
 $recipient = "sam@samrdexter.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader);
+$rtn = mail($recipient, $subject, $formcontent, $mailheader);
+echo $rtn;
 echo "Thank You!";
 
 ?>

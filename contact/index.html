@@ -60,15 +60,15 @@
       <form action="mail.php" method="POST">
         <div class="name-container">
           <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" value="Your name"><br><br>
+          <input type="text" id="name" name="name" value="Your name" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"><br><br>
         </div>
         <div class="email-container">
           <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email" value="Your email"><br><br>
+          <input type="text" id="email" name="email" value="Your email" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"><br><br>
         </div>
         <div class="message-container">
           <label for="message">Your Message:</label><br>
-          <input type="text" id="message" name="message" value="What can I help you with?"><br><br><br><br>
+          <input type="text" id="message" name="message" value="What can I help you with?" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"><br><br><br><br>
         </div>
         <div class="submit-button-container">
           <input class="submit-button" type="submit" value="send &#8594">
