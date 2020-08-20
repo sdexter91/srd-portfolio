@@ -8,7 +8,11 @@ $recipient = "sam@samrdexter.com";
 $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 $rtn = mail($recipient, $subject, $formcontent, $mailheader);
-echo $rtn;
-echo "Thank You!";
+
+// echo $rtn;
+// echo "Thank You!";
+ 
+header("Location: ../");
+die();
 
 ?>
