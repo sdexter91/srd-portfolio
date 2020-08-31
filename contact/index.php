@@ -1,4 +1,57 @@
 <!doctype html>
+
+<?php
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php';
+
+function sendMail() {
+  $mail = new PHPMailer(true);
+
+  try {
+    //Server settings
+    //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+    $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->Host = 'smtp.gmail.com';                  // Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                               // Enable SMTP authentication
+    $mail->Username = 'sam@samrdexter.com';             // SMTP username
+    $mail->Password = file_get_contents('../secret.json');                       // SMTP password
+    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 587;                                    // TCP port to connect to
+
+    //Recipients
+    $mail->setFrom('sam@samrdexter.com', $_POST['email']);          //This is the email your form sends From
+    $mail->addAddress('sam@samrdexter.com', 'Samantha Dexter'); // Add a recipient address
+    //$mail->addAddress('contact@example.com');               // Name is optional
+    //$mail->addReplyTo('info@example.com', 'Information');
+    //$mail->addCC('cc@example.com');
+    //$mail->addBCC('bcc@example.com');
+
+    //Attachments
+    //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+    //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+
+    //Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'New contact form submission from: ' . $_POST['name'];
+    $mail->Body    = 'NAME: ' . $_POST['name'] . ' EMAIL: ' . $_POST['email'] . ' MESSAGE: ' . $_POST['message'];
+    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+    return $mail->send();
+  } catch (Exception $e) {
+      // $mail->ErrorInfo;
+    return false;
+  }
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  $emailSent = sendMail();
+}
+
+?>
+
 <html class="no-js" lang="">
 
 <head>
@@ -51,13 +104,20 @@
 
   </header>
 
+ <!-- <div style="height: 200px; background-color: red;">
+    <?php
+      // echo print_r($_POST);
+    ?>
+  </div> -->
+
   <main class="contact-area">
     <div class="content-wrapper">
       <h4>
         Have a question? Want to talk development? Feel free to leave a message and I’ll reply as soon as possible!  
       </h4>
+      
 
-      <form action="test.php" method="POST">
+      <form action="index.php" method="POST">
         <div class="name-container">
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name" value="Your name" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"><br><br>
@@ -116,6 +176,15 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($emailSent)) {
+      if ($emailSent) {
+        echo "<script>alert('Email sent successfully!')</script>";
+      } else {
+        echo "<script>alert('Server error. Your email couldn't be sent.)</script>";
+      }
+    }
+  ?>
 </body>
 
 </html>
