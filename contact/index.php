@@ -179,10 +179,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($emailSent)) {
       if ($emailSent) {
-        echo "<script>alert('Email sent successfully!')</script>";
-      } else {
-        echo "<script>alert('Server error. Your email couldn't be sent.)</script>";
-      }
+       // echo "<script>alert('Email sent successfully!')</script>";
+      } //else {
+        //echo "<script>alert('Server error. Your email couldn't be sent.)</script>";
+      //}
     }
   ?>
 </body>
