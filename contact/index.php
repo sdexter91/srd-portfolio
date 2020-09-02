@@ -117,7 +117,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </h4>
       
 
-      <form action="index.php" method="POST">
+      <form action="" method="POST">
         <div class="name-container">
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name" value="Your name" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"><br><br>
@@ -179,10 +179,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($emailSent)) {
       if ($emailSent) {
-       // echo "<script>alert('Email sent successfully!')</script>";
-      } //else {
-        //echo "<script>alert('Server error. Your email couldn't be sent.)</script>";
-      //}
+        echo "<script>alert('Email sent successfully!')</script>";
+      } else {
+        echo "<script>alert('Server error. Your email couldn't be sent.)</script>";
+      }
     }
   ?>
 </body>
