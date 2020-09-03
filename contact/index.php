@@ -5,13 +5,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-<<<<<<< HEAD:contact/index.php
-require '/home/dh_bahkns/PHPMailer/src/Exception.php';
-require '/home/dh_bahkns/PHPMailer/src/PHPMailer.php';
-require '/home/dh_bahkns/PHPMailer/src/SMTP.php';
-=======
-require '../vendor/autoload.php';
->>>>>>> 2d3166cc78bb6a5392456476b840eb5c55d34c49:contact/index.html
+require '../packages/PHPMailer/src/Exception.php';
+require '../packages/PHPMailer/src/PHPMailer.php';
+require '../packages/PHPMailer/src/SMTP.php';
 
 function sendMail() {
   $mail = new PHPMailer(true);
