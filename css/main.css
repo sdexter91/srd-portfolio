@@ -193,7 +193,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 90%;
+    width: 100%;
     font-size: 1.125em;
     font-weight: 700;      
     text-transform: lowercase;
@@ -322,6 +322,47 @@ textarea {
     justify-content: space-around;
     align-items: center;
     padding: 20px 0;
+   }
+
+/* ==========================================================================
+   Services Page
+   ========================================================================== */
+
+   .services-hero-area h1 {
+      padding: 100px 0;
+      font-size: 3em;
+      font-family: 'Josefin Slab', serif;
+   }  
+
+   .services-area {
+      background-color: #F8F2F2;
+      color: #8C2A2A;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+   } 
+
+   .services-area .content-wrapper {
+     margin: 0;
+     width: 80%;
+     padding-bottom: 50px;
+   }
+
+   .services-area img {
+     padding-top: 30px;
+   }
+
+   .services-area .portfolio-icons {
+    width: 15%;
+    padding-top: 40px;
+   }
+
+   .services-area h3 {
+    font-size: 2em;
+    font-weight: 300;
+   }
+
+    .services-area p {
    }
 
 /* ==========================================================================
@@ -702,6 +743,29 @@ textarea {
    }
 
 /* ==========================================================================
+   Services Page
+   ========================================================================== */
+  .services-hero-area h1 {
+    font-size: 4em;
+    font-weight: 600;
+   }
+
+   .services-area .content-wrapper {
+     width: 100%;
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-evenly;
+   }
+
+   .services-area .web-section {
+     width: 40%;
+   }
+
+   .services-area .content-section {
+     width: 40%;
+   }
+
+/* ==========================================================================
    About Page
    ========================================================================== */
    .about .content-wrapper {
@@ -887,6 +951,22 @@ textarea {
 
     footer .social-icons {
     justify-content: space-around;    
+   }
+
+/* ==========================================================================
+   Services Page
+   ========================================================================== */
+  .services-hero-area h1 {
+    font-size: 6em;
+    font-weight: 700;
+   }
+
+   .services-area p {
+    font-size: 1.3em;
+   }
+
+   .services-area h4 {
+    font-size: 1.3em;
    }
 
 /* ==========================================================================
