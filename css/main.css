@@ -365,6 +365,132 @@ textarea {
     .services-area p {
    }
 
+   .services-area button {
+     font-size: 1em;
+     margin-top: 50px;
+   }
+
+   .services-area button a:visited {
+    color: #8C2A2A;
+   }
+
+   .services-area button a:link {
+    color: #8C2A2A;
+   }
+
+/* ==========================================================================
+   Case Study Page
+   ========================================================================== */
+
+   .case-study-hero-area h1 {
+      padding: 100px 0;
+      font-size: 3em;
+      font-family: 'Josefin Slab', serif;
+   }  
+
+   .case-study-area {
+      background-color: #F8F2F2;
+      color: #8C2A2A;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+   } 
+
+   .case-study-area .content-wrapper {
+     margin: 0;
+     width: 80%;
+     padding-bottom: 50px;
+   }
+
+   .case-study-area h1 {
+    font-family: 'Josefin Slab', serif;
+    padding-top: 30px;
+    border-bottom: 2px solid #f2a30f;
+   }
+
+   .case-study-area h2 {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding-top: 10px;
+    margin-bottom: 0;
+   }
+
+   .case-study-area img {
+    padding: 30px 0;
+   }
+
+   .case-study-sidebar {
+     
+   }
+
+   .case-study-sidebar .details {
+    padding: 15px 0;
+    text-transform: uppercase;
+   }
+
+   .case-study-sidebar .details p {
+    line-height: 2em;
+   }
+
+   .case-study-sidebar .details span {
+    font-weight: bolder;
+   }
+
+   .case-study-area .design-phase {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+   }
+
+   .main-content .wireframes, .mockups {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .main-content #wide {
+    width: 63%;
+   }
+
+   .main-content #narrow {
+    width: 27%;
+   }
+
+   .case-study-area h3 {
+    font-size: 2em;
+    font-weight: 300;
+   }
+
+    .case-study-area p {
+      text-align: left;
+   }
+
+
+   .case-study-area button {
+    margin-top: 20px;
+   }
+
+   .case-study-area button a:visited {
+    color: #8C2A2A;
+   }
+
+   .case-study-area button a:link {
+    color: #8C2A2A;
+   }
+
+   .case-study-area .review-box{ 
+    margin-top: 50px;
+    border: 2px solid #bf7885;
+    display: flex;
+    justify-content: center;
+   }
+
+   .case-study-area .review-box p {
+    text-align: center;
+    border: 2px solid #f2a30f;
+    padding: 30px;
+    margin: 5px;
+   }
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -765,6 +891,102 @@ textarea {
      width: 40%;
    }
 
+   .services-area button {
+     font-size: 1.2em;
+     margin-top: 70px;
+     width: 30%;
+   }
+
+/* ==========================================================================
+   Case Study Page
+   ========================================================================== */
+   .case-study-hero-area h1 {
+      font-size: 4em;
+   }  
+
+   .case-study-area .content-wrapper {
+     display: flex;
+     justify-content: space-between;
+     width: 85%;
+   }
+
+   .case-study-area .case-study-sidebar {
+     width: 29%; 
+   }
+
+   .case-study-area .case-study-sidebar h1 {
+    font-size: 1.7em;
+   }
+
+   .case-study-area .main-content {
+     width: 65%;
+   }
+
+   .case-study-area h2 { 
+     padding-top: 30px;
+   }
+
+   .case-study-area h3 { 
+     text-align: left;
+     font-size: 1.7em;
+     width: 100%;
+   }
+
+   .case-study-area .main-content .before-after-images {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .case-study-area .main-content .before-after-images img {
+    width: 48%;
+   }
+
+   .case-study-area .main-content .style-assets {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .case-study-area .main-content .style-assets img {
+    width: 30%;
+    align-self: center;
+   }
+
+   .case-study-area .main-content .design-assets {
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .case-study-area .main-content .design-assets .wireframes, .mockups{
+    width: 47%;
+    
+   }
+
+   .case-study-area .main-content .content-assets {
+     display: flex;
+     justify-content: space-between;
+     padding-top: 15px;
+   }
+
+   .case-study-area .main-content .content-assets img {
+     max-width: 47%;
+     align-self: center;
+   }
+
+   .case-study-area .main-content .development-assets {
+     display: flex;
+     justify-content: space-between;
+     padding-top: 15px;
+   }
+
+   .case-study-area .main-content .development-assets img {
+     max-width: 47%;
+     align-self: center;
+   }
+
+   .case-study-area button {
+    width: 30%;
+   }
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -967,6 +1189,34 @@ textarea {
 
    .services-area h4 {
     font-size: 1.3em;
+   }
+
+/* ==========================================================================
+   Case Study Page
+   ========================================================================== */
+   .case-study-hero-area h1 {
+      font-size: 6em;
+   } 
+
+   .case-study-area .case-study-sidebar h1 {
+    font-size: 3em;
+   }
+
+   .case-study-area .content-wrapper {
+     width: 90%;
+   }
+
+   .case-study-area p {
+     font-size: 1.3em
+   }
+
+   .case-study-area .main-content h2 {
+    font-size: .99em;
+    padding: 70px 0 30px 0;
+   }
+
+   .case-study-area .main-content h3 {
+    font-size: 2.5em;
    }
 
 /* ==========================================================================
