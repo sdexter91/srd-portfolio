@@ -914,12 +914,18 @@ textarea {
      width: 29%; 
    }
 
+   .case-study-area .case-study-sidebar .case-study-sidebar-wrapper{
+    height: 100vh;
+   }
+
    .case-study-area .case-study-sidebar h1 {
     font-size: 1.7em;
    }
 
    .case-study-area .main-content {
      width: 65%;
+     height: 100vh;
+     overflow: scroll;
    }
 
    .case-study-area h2 { 
